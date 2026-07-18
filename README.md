@@ -1,21 +1,14 @@
 # python-hot-reload
 
-Dev-time helpers to reload changed modules (`importlib.reload`), reimport dependents, and rebind live instances' `__class__`.
+Dev-time module reload. Call `debug_reload_pymodules()` when you change a file and don't want to restart the whole process.
 
-Primary entrypoint: `debug_reload_pymodules()` (formerly in PyKotor `utility/tricks.py`).
+Not for production. Useful when you're iterating on a long-lived GUI or server.
 
 ## Install
 
 ```bash
-pip install -e .
 pip install git+https://github.com/oldrepublicwizard/python-hot-reload.git
 ```
-
-Optional peer: [`LoggerPlus`](https://github.com/oldrepublicwizard/LoggerPlus).
-
-## Origin
-
-Extracted from [PyKotor](https://github.com/OpenKotOR/PyKotor) `utility/tricks.py`.
 
 ## License
 
